@@ -13,7 +13,7 @@ const Profile = () => {
       <div>
         My posts
         <div>
-          New post
+          New posts
         </div>
         <div className={style.posts}>
           <div className={style.item}>
