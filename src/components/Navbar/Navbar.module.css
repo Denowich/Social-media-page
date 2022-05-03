@@ -6,3 +6,11 @@
 .item {
   color: whitesmoke;
 }
+
+.active {
+  color: blue;
+}
+
+.activeS {
+  color: brown;
+}
