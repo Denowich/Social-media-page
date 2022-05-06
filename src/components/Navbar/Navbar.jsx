@@ -1,33 +1,26 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import style from "./Navbar.module.css";
 
-let p1 = 'item';
-let p2 = 'active';
-let proff = `${style.p1} ${style.p2}`
-
-
-let m1 = 'item';
-let m2 = 'activeS'
-let musS = `${style.m1} ${style.m2}`
 
 const Navbar = () => {
   return (
     <nav className={style.nav}>
-      <div className={`${style.item} ${style.active}`}>
-        <a>Profile</a>
+      <div className={style.item}>
+        <NavLink to="/profile" className={(navData) => navData.isActive ? style.activeLink: ''}>Profile</NavLink>
       </div>
         <div className={style.item}>
-          <a>Messages</a>
+          <NavLink to= "/dialogs" className={(navData) => navData.isActive ? style.activeLink : ''}>Message</NavLink>
         </div>
         <div className={style.item}>
-          <a>News</a>
-        </div>
-        <div className={`${style.item} ${style.activeS}`}>
-          <a>Music</a>
+          <NavLink to="/news" className={(navData) => navData.isActive ? style.activeLink: ''}>News</NavLink>
         </div>
         <div className={style.item}>
-          <a>Settings</a>
-      </div>
+          <NavLink to="/music" className={(navData) => navData.isActive ? style.activeLink: ''}>Music</NavLink>
+        </div>
+        <div className={style.item}>
+          <NavLink to="/settings" className={(navData) => navData.isActive ? style.activeLink: ''}>Settings</NavLink>
+        </div>
     </nav>
   );
 };

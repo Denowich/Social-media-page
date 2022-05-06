@@ -1,18 +1,17 @@
 import React from "react";
 import style from "./Post.module.css";
 
-const Post = () => {
+const Post = (props) => {
   return (  
           <div className={style.item}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQkHfyUXpFU_i8g1PIp_T-hSSyb8PYePWprg&usqp=CAU"/>
-            post 1
+            <img src="https://shapka-youtube.ru/wp-content/uploads/2022/03/avatarka-betmena.jpg"/>
+              {props.message}
               <div>
-                <textarea></textarea> 
-                <button>remove</button>
+                <button>Remove</button>
                 <div>
-                  <span>like</span> 
+                  <span> like </span> 
+                  {props.likes}
                 </div> 
-                
               </div>    
           </div>
   );

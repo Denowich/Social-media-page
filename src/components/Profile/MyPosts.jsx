@@ -5,18 +5,22 @@ import Post from "./MyPosts/Post/Post.jsx";
 const MyPosts = () => {
   return (
       <div>
+        <div className={style.item}>
+          <div>
+            <button>Add</button>
+            <button>Remove</button>
+          </div>
         My posts
         <div>
           <textarea></textarea>
-          <button>Add post</button>
+          <button>Add</button>
+          <button>Remove</button>
         </div>
         <div className={style.posts}>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
+          <Post message = 'Welcome my friends!' likes = '15'/>
+          <Post message = 'How are you?' likes = '1'/>
         </div>
+      </div>
       </div>
   );
 };
