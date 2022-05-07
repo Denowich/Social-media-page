@@ -20,6 +20,10 @@ const MyPosts = () => {
           <Post message = 'Welcome my friends!' likes = '15'/>
           <Post message = 'How are you?' likes = '1'/>
         </div>
+        {/* My input
+        <div>
+          <input text='ON' 
+        </div> */}
       </div>
       </div>
   );
