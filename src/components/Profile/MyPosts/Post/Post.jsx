@@ -7,10 +7,12 @@ const Post = (props) => {
             <img src="https://shapka-youtube.ru/wp-content/uploads/2022/03/avatarka-betmena.jpg"/>
               {props.message}
               <div>
+              <div>
+                </div>
                 <button>Remove</button>
                 <div>
-                  <span> like </span> 
-                  {props.likes}
+                  <span> likes </span> 
+                  {props.likesCount}
                 </div> 
               </div>    
           </div>
