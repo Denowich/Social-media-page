@@ -5,7 +5,10 @@ const Post = (props) => {
   return (
     <div>
       <div className={style.item}>
-        <img src="https://shapka-youtube.ru/wp-content/uploads/2022/03/avatarka-betmena.jpg" />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHQUzZ-yra09GaqSBLfqk12EmB-xNGkd2P2Q&usqp=CAU.jpg"
+          alt="img"
+        />
         {props.message}
       </div>
       <div>
